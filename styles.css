@@ -1,0 +1,483 @@
+/**
+ * Base styles
+ */
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 
+		"Segoe UI", "Roboto", "Oxygen", 
+		"Ubuntu", "Cantarell", "Fira Sans", 
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	margin: 0;
+	background: #F6F6F4;
+}
+
+ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+}
+
+.no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.centered {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/**
+ * Header styles
+ */
+
+.header {
+	position: relative;
+	z-index: 5;
+	font-size: 1.2rem;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #3889FF;
+	color: white;
+	-webkit-box-shadow: 0px 1px 29px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 29px -9px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 29px -9px rgba(0,0,0,0.75);
+}
+
+.header__menu li {
+	padding: 10px 15px;
+}
+
+.header__menu li:hover {
+	cursor: pointer;
+	background: white;
+	color: #3889FF;
+}
+
+.header__menu li:not(:last-of-type) {
+	/*border-right: 1px solid white;*/
+}
+
+/**
+ * Jumbotron styles
+ */
+.jumbotron {
+	background: white;
+	margin-top: 45px;
+	padding: 30px 20px 60px 20px;
+	border-bottom: 1px solid #eee;
+}
+
+
+.jumbotron .slogan {
+	font-size: 2.5rem;
+}
+
+.jumbotron h1 {
+	margin-top: 40px;
+	text-align: center;
+	color: #464451;
+}
+
+.vk-group-wrapper,
+.phone-number-wrapper {
+	display: inline-block;
+	vertical-align: middle;
+	width: 49%;
+}
+
+.vk-group-wrapper {
+	text-align: left;
+}
+
+.phone-number-wrapper {
+	text-align: right;
+}
+
+.vk-group img,
+.vk-group h4,
+.phone-number img,
+.phone-number h4 {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.vk-group img {
+	margin-top: 5px;
+	transition: all 0.4s ease;
+}
+
+.vk-group img:hover
+{
+	-webkit-transform: rotateZ(-180deg);
+	-ms-transform: rotateZ(-180deg);
+	transform: rotateZ(-180deg);
+}
+
+.vk-group h4,
+.phone-number h4 {
+	margin: 0 0 0 10px;
+	font-size: 2rem;
+	font-weight: lighter;
+}
+
+
+
+/**
+ * Special offer styles
+ */
+.special-offer {
+	position: relative;
+	margin-top: -30px;
+	max-width: 600px;
+	background: white;/*#E6F0FE;*/
+	padding: 20px 10px;
+	border-radius: 20px;
+	border: 6px solid #EC170E;
+}
+
+.special-offer .left,
+.special-offer .right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+.special-offer h3 {
+	margin: 0 0 10px 0;
+	font-size: 1.7rem;
+	color: #313D4E;
+}
+
+.special-offer .left {
+	padding-left: 25px;
+	width: 58%;
+}
+
+.special-offer .right {
+	text-align: center;
+	width: 37%;
+}
+.special-offer img {
+	border-radius: 20px;
+	max-width: 80%;
+}
+
+.special-offer p {
+	font-size: 1.2rem;
+}
+
+.special-offer .hit {
+	position: absolute;
+	left: -40px;
+	bottom: 30px;
+	height: 130px;
+}
+
+/*.special-offer .hit {
+	display: inline-block;
+	vertical-align: middle;
+	height: 90px;
+}*/
+
+.order-wrapper {
+	text-align: center;
+}
+
+.special-offer .price {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.3rem;
+	padding: 20px 30px;
+	color: #EC170E;
+	background: white;	
+	border-radius: 7px;
+	margin: 15px 0;
+	border: 3px solid #EC170E;
+
+}
+
+.special-offer .price .old {
+	color: #444;
+}
+
+.special-offer .price .new {
+	font-size: 2.0rem;
+}
+
+.special-offer h4 {
+	margin: 0;
+}
+.special-offer .offer-text {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+}
+.special-offer .order-button {
+	margin: 25px 10px;
+	display: inline-block;
+	background: #EC170E;
+	font-size: 1.3rem;
+	color: white;
+	padding: 5px 20px;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.special-offer .order-button:hover {
+	background: #FC5467;
+}
+
+.special-offer .order-button:active {
+	background: #BA0D20;
+}
+
+/**
+ * How it working styles
+ */
+.how-it-working {
+	margin: 70px auto;
+	text-align: center;
+}
+
+
+.how-it-working h3 { 
+	font-size: 1.8rem;
+}
+
+.how-it-working__item {
+	min-height: 320px;
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin: 10px;
+	padding: 20px 10px;
+	border-radius: 10px;
+	background: white;
+	-webkit-box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+}
+
+.how-it-working__item img {
+	max-width: 100%;
+}
+
+.how-it-working__item-ege {
+	min-height: 140px;
+}
+
+p.ege-info {
+	font-size: 1.4rem;
+}
+
+.how-it-working__item-ege p {
+	font-weight: 700;
+}
+
+/**
+ * Rent and purchase styles
+ */
+.rent-and-purchase {
+	margin: 30px auto;
+}
+
+.rent-and-purchase h3 {
+	text-align: center; 
+	font-size: 1.8rem;
+}
+
+.headphones {
+	text-align: center;
+}
+.headphone {
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	max-width: 26%;
+	margin-top: 15px;
+	border-radius: 10px;
+	padding: 10px;
+	background: #F8F7F7;
+	-webkit-box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+}
+.headphone-special {
+	max-width: 30%;
+	margin-top: 0px;
+	background: white;
+}
+.headphone .model-name {
+	font-size: 1.2rem;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+.headphone-img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.headphone .prices h5 {
+	text-align: center;
+	font-size: 1.15rem;
+}
+.headphone .prices .old {
+	color: #F96C73;
+	margin-bottom: -20px;
+}
+.headphone .prices h5 span {
+	background: #F9BD6C;
+	color: white;
+	padding: 2px 8px;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	font-weight: lighter;
+}
+
+.headphone li {
+	text-align: left;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.headphone .plus {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.headphone .prices-special {
+	text-align: left;
+	font-weight: normal;
+}
+.headphone .prices-special h5 span {
+	background: #FDBD4E;
+}
+/**
+ * Recalls
+ */
+.recalls h3 {
+	text-align: center;
+	font-size: 1.8rem;
+}
+.recall {
+	padding: 0px 10px 15px 10px;
+	border-radius: 15px;
+	position: relative;
+	display: inline-block;
+	margin: 20px 20px;
+	width: calc(50% - 80px);
+	background: white;
+	-webkit-box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 52px -13px rgba(0,0,0,0.75);
+}
+
+.recall img {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 150px;
+	border-radius: 50%;
+	height: auto;
+}
+.recall .name {
+	font-size: 2rem;
+	text-align: left;
+	margin-left: 150px;
+	margin-bottom: 60px;
+}
+.recall p {
+	font-size: 1.5rem;
+}
+
+
+@media (max-width: 900px) {
+	.how-it-working__item {
+		width: 42%;
+	}
+}
+
+@media (max-width: 750px) {
+	.header {
+		display: none;
+	}
+	.jumbotron {
+		margin-top: 0;
+	}
+	.vk-group-wrapper,
+	.phone-number-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+	.vk-group h4,
+	.phone-number h4 {
+		font-size: 1.5rem;
+	}
+	.vk-group-wrapper {
+		margin-bottom: 20px;
+	}
+	.hit {
+		display: none;
+	}
+	.recall {
+		width: calc(100% - 60px);
+	}
+	.headphone {
+		margin: 10px 0;
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 630px) {
+	.special-offer {
+		width: 100%;
+		border-radius: 0;
+	}
+	
+	.special-offer .left,
+	.special-offer .right {
+		box-sizing: border-box;
+		width: 100%;
+	}
+
+	.special-offer .left {
+		margin-bottom: 20px;
+	}
+
+	.special-offer .left-wrapper {
+		margin: 0 auto;
+		max-width: 400px;
+	}
+
+	.special-offer .order-wrapper {
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.how-it-working__item {
+		width: 90%;
+		min-height: 0;
+	}
+}
+
