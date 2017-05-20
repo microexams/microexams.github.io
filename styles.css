@@ -211,8 +211,8 @@ a.anchor {
 .special-offer .price {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 1.3rem;
-	padding: 20px 30px;
+	font-size: 1.1rem;
+	padding: 20px 30px 20px 50px;
 	color: #EC170E;
 	background: white;	
 	border-radius: 7px;
@@ -226,7 +226,7 @@ a.anchor {
 }
 
 .special-offer .price .new {
-	font-size: 2.0rem;
+	font-size: 1.2rem;
 }
 
 .special-offer h4 {
