@@ -473,9 +473,18 @@ p.ege-info {
 }
 
 @media (max-width: 630px) {
+	* {
+		overflow-x: hidden;
+	}
 	.special-offer {
-		width: 100%;
+		width: 85%;
 		border-radius: 0;
+	}
+
+	.contacts {
+		padding: 100px 0;
+		font-size: 1.2rem;
+		text-align: center;
 	}
 	
 	.special-offer .left,
@@ -500,7 +509,7 @@ p.ege-info {
 
 @media (max-width: 500px) {
 	.how-it-working__item {
-		width: 90%;
+		width: 85%;
 		min-height: 0;
 	}
 }
