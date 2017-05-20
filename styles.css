@@ -36,6 +36,13 @@ a {
 	color: inherit;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+
 .centered {
 	max-width: 900px;
 	margin: 0 auto;
@@ -384,6 +391,7 @@ p.ege-info {
 	border-radius: 15px;
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	margin: 20px 20px;
 	width: calc(50% - 80px);
 	background: white;
@@ -401,13 +409,29 @@ p.ege-info {
 	height: auto;
 }
 .recall .name {
-	font-size: 2rem;
+	font-size: 1.25rem;
 	text-align: left;
 	margin-left: 150px;
 	margin-bottom: 60px;
 }
 .recall p {
-	font-size: 1.5rem;
+	font-size: 1.1rem;
+}
+
+.contacts {
+	padding: 100px 0;
+	font-size: 2rem;
+	text-align: center;
+}
+.contacts a {
+	color: #3889FF;
+}
+
+.all-rights-reserved {
+	background: #666;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
 }
 
 
