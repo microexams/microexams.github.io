@@ -484,7 +484,9 @@ p.ege-info {
 	.special-offer .left {
 		text-align: center;
 	}
-
+	.how-it-working, .rent-and-purchase {
+		margin: 10px 0;
+	}
 	.special-offer .left {
 		padding-left: 0;
 	}
